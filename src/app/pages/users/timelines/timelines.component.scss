@@ -1,0 +1,125 @@
+.timelineDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #f2f2f1;
+    margin-bottom: 20px;
+}
+.timelineDiv ion-img{
+    width: 18px!important;
+    margin: 4px 8px 0;
+    display: inline-block;
+}
+.timelineDiv div {
+    display: inline-block;
+   
+}
+.timelineDiv div p {
+    display: inline-block;
+}
+.badge {
+    background: #ccc;
+    padding: 3px 7px 1px 7px;
+    border-radius: 15px;
+}
+.timelineHeader{
+    display: none;
+}
+// .icon-list {
+//     width: 57px;
+//     position: fixed;
+//     top: 50%;
+//     transform: translatey(-50%);
+//     right: 0;
+//     border:1px solid #ccc;
+// }
+// .icon-list ion-item .item-native {
+//     padding:0!important;
+// }
+// .add-icon ion-icon {
+//     font-size: 30px;
+// }
+// .add-icon ion-badge {
+//     border-radius: 30px;
+//     background: #ff0000;
+// }
+// .add-icon {
+//     position: fixed;
+//     top: 84%;
+//     transform: translateY(-84%);
+//     right: 10px;
+// }
+.dropImg select{
+    background: transparent;
+    width: 21px;
+    float: right;
+    margin-top: 15px;
+    border:none;
+}
+.dropImg select{
+    font-size:12px;
+}
+.dropImg select:focus{
+    outline: none;
+}
+.firstOpt{
+    display: none;
+}
+.hrLine {
+    height: 2px;
+    background: #ccc;
+}  
+
+@keyframes timelineImg{
+    0%{
+        bottom: 30px;
+    }
+    25%{
+        bottom: 35px;
+    }
+    50%{
+        bottom: 30px;
+    }
+    75%{
+        bottom: 25px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+@media screen and (max-width:767px){
+    .timelineHeader{
+        display: block;
+    }
+    .dropImg select{
+        margin-top: 0px;
+        color: #000;
+        // &:focus{
+        //     background: #ff0000;
+        //     color: #fff;
+        // }
+    }
+}
+.timelineImg ion-img {
+    height: 100%;
+}
+.timelineImg {
+    max-width: 80px;
+    position: fixed;
+    bottom: 30px;
+    left: 25px;
+    animation: timelineImg 3s infinite;
+}
+@media screen and (max-width:575px){
+    .textDisplay{
+        display: none!important;
+    }
+    .timelineDiv {
+        align-items: center;
+    }
+    p {
+        font-size: 12px!important;
+        text-align: justify;
+    }
+    
+}

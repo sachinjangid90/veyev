@@ -1,0 +1,168 @@
+<app-header></app-header>
+<ion-content>
+  <div class="bgImages">
+    <div padding class="bodyBgColor">
+      <ion-row>
+        <ion-col>
+          <div class="ion-text-center">
+            <h2>Exhibit yourself across the Globe.</h2>
+            <h2>Welcome to "Gallery of Humans".</h2>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="sliderDiv" fullscreen padding scroll-y="false">
+      <div class="dashboardTitle">
+        <h3>Featured Humans</h3>
+      </div>
+      <ion-slides [options]="slideOptsOne">
+        <ion-slide>
+          <img src="assets/image/img1.png" />
+          <h2>Vaggy_i_am</h2>
+          <p>sadhvi Sinha</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/image/img1.png" />
+          <h2>Vaggy_i_am</h2>
+          <p>sadhvi Sinha</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/image/img1.png" />
+          <h2>Vaggy_i_am</h2>
+          <p>sadhvi Sinha</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/image/img1.png" />
+          <h2>Vaggy_i_am</h2>
+          <p>sadhvi Sinha</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/image/img1.png" />
+          <h2>Vaggy_i_am</h2>
+          <p>sadhvi Sinha</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/image/img1.png" />
+          <h2>Vaggy_i_am</h2>
+          <p>sadhvi Sinha</p>
+        </ion-slide>
+      </ion-slides>
+    </div>
+
+    <!-- top images -->
+    <div class="sliderDiv" fullscreen padding scroll-y="false">
+      <div class="dashboardTitle">
+        <h3>Popular Images</h3>
+      </div>
+      <ion-slides [options]="slideOptsTwo">
+        <ion-slide>
+          <a href="http://veyev.social/post/desc/97/79">
+            <img
+              style="max-height:220px;"
+              src="http://veyev.social/uploads/post/62d373fabf4562bc0e84f14e270d1a98.gif"
+              alt="hvj"
+              title="hvj"
+            />
+            <br /><br />
+          </a>
+        </ion-slide>
+        <ion-slide>
+          <a href="http://veyev.social/post/desc/97/79">
+            <img
+              style="max-height:220px;"
+              src="http://veyev.social/uploads/post/62d373fabf4562bc0e84f14e270d1a98.gif"
+              alt="hvj"
+              title="hvj"
+            />
+            <br /><br />
+          </a>
+        </ion-slide>
+
+        <ion-slide>
+          <a href="http://veyev.social/post/desc/97/79">
+            <img
+              style="max-height:220px;"
+              src="http://veyev.social/uploads/post/62d373fabf4562bc0e84f14e270d1a98.gif"
+              alt="hvj"
+              title="hvj"
+            />
+            <br /><br />
+          </a>
+        </ion-slide>
+      </ion-slides>
+    </div>
+
+    <!-- top videos -->
+    <div class="sliderDiv sliderVideoDiv" fullscreen padding scroll-y="false">
+      <div class="dashboardTitle">
+        <h3>Top Videos</h3>
+      </div>
+      <ion-slides [options]="slideOptsTwo">
+        <ion-slide>
+          <video
+            height="100%"
+            width="100%"
+            preload="auto"
+            onmouseover="this.play();"
+            onmouseout="this.pause();"
+          >
+            <source
+              src="http://veyev.social/uploads//86fb39d1e797d708be171fa93243d72b.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <br />
+          <p>
+            'In The End' Linkin Park Cinematic Cover (feat. Jung Youth &amp;
+            Fleurie) -- Produced by Tommee Profitt
+          </p>
+        </ion-slide>
+        <ion-slide>
+          <video
+            height="100%"
+            width="100%"
+            preload="auto"
+            onmouseover="this.play();"
+            onmouseout="this.pause();"
+          >
+            <source
+              src="http://veyev.social/uploads//86fb39d1e797d708be171fa93243d72b.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <br />
+          <p>
+            'In The End' Linkin Park Cinematic Cover (feat. Jung Youth &amp;
+            Fleurie) -- Produced by Tommee Profitt
+          </p>
+        </ion-slide>
+
+        <ion-slide>
+          <video
+            height="100%"
+            width="100%"
+            preload="auto"
+            onmouseover="this.play();"
+            onmouseout="this.pause();"
+          >
+            <source
+              src="http://veyev.social/uploads//86fb39d1e797d708be171fa93243d72b.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <br />
+          <p>
+            'In The End' Linkin Park Cinematic Cover (feat. Jung Youth &amp;
+            Fleurie) -- Produced by Tommee Profitt
+          </p>
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+</ion-content>

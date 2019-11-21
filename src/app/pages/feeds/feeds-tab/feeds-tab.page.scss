@@ -1,0 +1,80 @@
+.feedsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #f2f2f1;
+    padding: 5px 0 2px 0;
+}
+.feedsDiv ion-img{
+    width: 25px!important;
+    margin: 0 8px;
+    display: inline-block;
+}
+.feedsDiv div {
+    display: inline-block;
+   
+}
+.feedsDiv div p {
+    display: inline-block;
+  
+}
+.ionDropdown{
+    border-left: 1px solid #ccc;
+    background: transparent;
+    float: right;
+    border: none;
+    margin-top:11px;
+    &:focus{
+        outline: none!important;
+    }
+} 
+.firstOpt{
+    display: none;
+}
+.dropImg select{
+    background: transparent;
+    width: 21px;
+    float: right;
+    margin-top: 15px;
+}
+.dropImg select:focus{
+    outline: none;
+}
+.dropImg ion-img{
+    float: left;
+}
+.cardDiv ion-card-header{
+    padding: 0;
+}
+.cardDiv ion-card-content{
+    padding: 0;
+}
+.cardDiv{
+    padding:8px 8px 0 8px;
+    margin: 0;
+}
+@media screen and (max-width:1199px){
+    .cardDiv p{
+        margin: 3px;
+    }
+    .dropImg select{
+        margin-top: 3px;
+    }
+} 
+@media screen and (max-width:767px){
+    .cardDiv p{
+        margin: 0;
+        color: #000;
+        font-weight: bold;
+    }
+    .dropImg select{
+        margin-top: 0px;
+        border: none;
+        color: #000;
+    }
+} 
+@media screen and (max-width:767px){
+.feedsDiv ion-img{
+    width: 20px!important;
+}
+}

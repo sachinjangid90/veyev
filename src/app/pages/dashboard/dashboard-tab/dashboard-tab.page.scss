@@ -1,0 +1,89 @@
+
+
+
+
+
+
+
+.bgImages{
+    background-image:url(/assets/image/trans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 15px 30px;
+}
+// .bodyBgColor h2{
+//     font-weight: bold!important;
+// }
+
+
+
+
+/*carousel css*/
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+  .swiper-slide {
+    display: block;
+  }
+  ion-slide > h2 {
+    margin-top: 2.8rem;
+  }
+  ion-slide > img {
+    max-height: 100%;
+    max-width: 80%;
+    margin: 0px 0;
+  }
+
+
+.sliderDiv ion-slide h2 {
+    margin: 10px 0!important;
+    color:#ff0000;
+}
+// .sliderDiv ion-slide p {
+//     margin: 0!important;
+// }
+//.swiper-slide {
+    //width: 80% !important;
+    // margin-right: -34%;
+    // margin-left: 13%;
+
+//}
+.sliderDiv {
+    background-image: linear-gradient(#ebecf0, #a3a8ac);
+    margin-top: 25px;
+}
+.sliderVideoDiv p{
+    margin-top: 10px!important;
+    max-width: 220px;
+    height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media screen and (max-width:767px){
+    .bgImages{
+        padding: 0 0px 30px;
+    }
+}
+@media screen and (max-width:575px){
+    .sliderDiv {
+        ion-slide h2 {
+            margin: 10px 0!important;
+            font-size:15px!important;
+        }
+        ion-slide p {
+            // margin: 0!important;
+            font-size:14px;
+        }
+    }
+    .bodyBgColor h2{
+        font-size:16px!important;
+        margin:0;
+    }
+    .dashboardTitle h3 {
+        margin-top: 0;
+        font-size: 18px;
+        color: #474747;
+    }
+}

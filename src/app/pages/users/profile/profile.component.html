@@ -1,0 +1,51 @@
+<app-header></app-header>
+<ion-content>
+  <div class="profile">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="editClass">
+            <div>
+              <ion-icon slot="start" name="camera"></ion-icon>
+            </div>
+            <div>
+              <ion-label>Edit</ion-label>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="detailProfile ion-no-padding">
+      <ion-row class="">
+        <ion-col size="12" size-md="8" offset-md="2" class="ion-no-padding">
+          <ion-row>
+            <ion-col size="12" size-md="3" class="ion-no-padding">
+              <div>
+                <ion-img src="assets/image/profile.jpg"></ion-img>
+              </div>
+            </ion-col>
+            <ion-col size="12" size-md="9" class="ion-no-padding">
+              <ion-card>
+                <div class="arrows">
+                    <img *ngIf="showItem" (click)="getItem()" src="assets/image/arrow-down.png">
+                    <img *ngIf="!showItem" (click)="getItem()" src="assets/image/arrow-up.png">
+                </div>
+                <p>@vaggi_i_am</p>
+                <h5>Kumari Bhanu</h5>
+                <div [ngClass]="{hideDiv: showItem}">
+                    <p >I believe in humanity.</p>
+                    <ion-img (click)="editProfile()" src="assets/image/pencil-edit.png"></ion-img>
+                </div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <app-profile-link></app-profile-link>
+  </div>
+</ion-content>
+
+
+

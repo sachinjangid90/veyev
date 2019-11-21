@@ -1,0 +1,30 @@
+.icon-list {
+    width: 57px;
+    position: fixed;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 0;
+    border:1px solid #ccc;
+}
+.icon-list ion-item .item-native {
+    padding:0!important;
+}
+// .icon-list ion-item ion-icon {
+//     color: #000;
+// }
+.add-icon ion-icon {
+    font-size: 30px;
+}
+.add-icon ion-badge {
+    border-radius: 30px;
+    background: #ff0000;
+}
+.add-icon {
+    position: fixed;
+    top: 84%;
+    transform: translateY(-84%);
+    right: 10px;
+}
+.active{
+    color:#ff0000;
+}

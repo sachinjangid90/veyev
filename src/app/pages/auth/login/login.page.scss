@@ -1,0 +1,162 @@
+.loginSignup{
+        background-image:url(/assets/image/loginBg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 25px 50px 0 50px;
+        height: 100%;
+}
+.logoDiv ion-img {
+    width: 150px!important;
+    margin: 0 auto;
+}
+// .logoDiv {
+//     margin-bottom: 30px;
+// }
+.text-center{
+    text-align: center!important;
+}
+.text-font-weight{
+    font-weight: bold!important;
+    margin: 0;
+}
+.formDiv ion-img {
+    width: 16px;
+    margin-right: 10px;
+}
+.formDiv {
+    div {
+    display: flex;
+    border-bottom: 1px solid #696969;
+    margin-top: 12px;
+    padding-bottom: 6px;
+    ion-input{
+        height: 18px!important;
+        padding: 0!important;
+        font-size: 14px;
+        --color:#000;
+    }
+}
+.checkBox{
+    border: none !important;
+    margin: 16px 0 15px;
+    height: 20px;
+    padding: 0;
+    ion-checkbox{
+        margin-right: 10px;
+        height: 18px;
+        width: 18px;
+    }
+    ion-label{
+        font-size: 12px;
+    }
+}
+}
+.bgDanger{
+    --background:#ff0000;
+}
+.HorizontalLine {
+    background: #ccc;
+}
+.horizontalLineDiv{
+    margin-top:2px;
+}
+.social-icons ion-img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.social-icons {
+    padding-bottom: 25px;
+    position: relative;
+}
+.skipBtn {
+    position: absolute;
+    right: 0px;
+    top: 40px;
+}
+.skipBtn p{
+    color: #21adf1;
+}
+
+// .formDiv {
+//     margin-top: 50px;
+// }
+.borderOne {
+    border-bottom: 3px solid #ff0000 !important;
+    font-weight: bold;
+  }
+.borderTwo {
+    border-bottom: 3px solid transparent !important;
+  }
+.passwordForm h4{
+    font-weight: bold;
+    margin:50px 0;
+}
+.passwordDiv{
+    margin: 0;
+}
+// .passwordBtn{
+//     margin: 80px 0 210px 0;
+// }
+.no-margin{
+    margin:0;
+}
+.backarrow ion-img {
+    width: 18px;
+    margin: 4px 7px 0 0;
+}
+.backarrow ion-item{
+    width: 120px;
+    --background: none;
+    margin: 0 auto;
+}
+.backarrow ion-item ion-text{
+   font-size: 14px;
+}
+
+@media screen and (max-width:575px){
+    .loginSignup{
+        padding: 45px 30px 0 30px;
+        
+}
+    .social-icons ion-img {
+        width: 35px;
+        margin: 0 auto;
+    }
+    .skipBtn {
+    position: absolute;
+    right: -5px;
+    top: 40px;
+    }
+    .bgDanger{
+        font-size: 15px;
+    }
+    // .passwordBtn{
+    //     margin: 30px 0 100px 0;
+    // }
+}
+@media screen and (max-width:420px){
+    .formDiv {
+        div {
+        margin-top: 10px;
+        padding-bottom: 5px;
+       }
+       .checkBox{
+        margin: 10px 0 15px;
+    }
+    }
+    .social-icons {
+        padding-bottom: 15px;
+    }
+    .social-icons ion-col {
+        padding: 0px;
+    }
+    ion-button{
+        height: 35px;
+        margin:0;
+    }
+    ion-grid{
+        padding:0;
+    }
+ 
+}

@@ -1,0 +1,22 @@
+<section class="icon-list">
+  <ion-list>
+      <!-- (click)="timelineModal()" -->
+    <ion-item >
+      <ion-icon [routerLink]="['/users/timelines']" routerLinkActive="active" name="menu"></ion-icon>
+    </ion-item>
+    <!-- (click)="galleryModal()" -->
+    <ion-item >
+      <ion-icon [routerLink]="['/users/gallery']" routerLinkActive="active" name="image"></ion-icon>
+    </ion-item>
+    <ion-item >
+      <ion-icon [routerLink]="['/users/followers']" routerLinkActive="active" name="people"></ion-icon>
+    </ion-item>
+  </ion-list>
+</section>
+<section class="add-icon">
+    <ion-badge (click)="openPopover()">
+        <ion-icon name="add"></ion-icon>
+    </ion-badge>
+    
+  </section>
+  

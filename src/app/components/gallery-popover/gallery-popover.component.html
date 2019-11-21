@@ -1,0 +1,85 @@
+
+<ion-content padding>
+  <section>
+      <ion-row>
+          <ion-col class="ion-text-end">
+              <ion-icon (click)="galleryPopOverCloseModal()" name="close"></ion-icon>
+        
+          </ion-col>
+        </ion-row>
+  </section>
+  <section class="ion-text-center jobPostClass">
+    
+    <ion-row>
+      
+          
+      <ion-col size="4" [ngClass]="{ActiveBackground: textBg}" (click)="setActiveTab('Text')">
+        <p>Text</p>
+      </ion-col>
+      <ion-col size="4" [ngClass]="{ActiveBackground: imageBg}" (click)="setActiveTab('Images')">
+          <p>Images</p>
+        </ion-col>
+        <ion-col size="4" [ngClass]="{ActiveBackground: videoBg}" (click)="setActiveTab('Videos')">
+            <p>Videos</p>
+          </ion-col>
+    </ion-row>
+  </section>
+  
+
+  <section *ngIf="activeTab === 'Text'" >
+    
+        
+    <ion-row>
+      <ion-col>
+             <div class="textOuterDiv textArea">
+              <ion-textarea placeholder="Enter your text..."></ion-textarea>
+             </div>
+             <br>
+             <div class="ion-text-center">
+                <ion-button class="greenBtn">Publish</ion-button>
+            </div>
+      </ion-col>
+    </ion-row>
+    
+  </section>
+
+  <section *ngIf="activeTab === 'Images'">
+      <ion-row>
+          <ion-col>
+                 <div class="textOuterDiv">
+                    <ion-input type="text" placeholder="Enter your title"></ion-input>
+                 </div>
+                 <div class="textOuterDiv textArea">
+                    <ion-textarea placeholder="Enter your description..."></ion-textarea>
+                   </div>
+                   <div class="textOuterDiv">
+                      <ion-input type="file" placeholder="Enter your title"></ion-input>
+                   </div>
+                   <br>
+                 <div class="ion-text-center">
+                    <ion-button class="greenBtn">Publish</ion-button>
+                </div>
+          </ion-col>
+        </ion-row>
+    </section>
+
+    <section *ngIf="activeTab === 'Videos'">
+        <ion-row>
+            <ion-col>
+                   <div class="textOuterDiv">
+                      <ion-input type="text" placeholder="Enter your title"></ion-input>
+                   </div>
+                   <div class="textOuterDiv textArea">
+                      <ion-textarea placeholder="Enter your description..."></ion-textarea>
+                     </div>
+                     <div class="textOuterDiv">
+                        <ion-input type="file" placeholder="Enter your title"></ion-input>
+                     </div>
+                     <br>
+                   <div class="ion-text-center">
+                      <ion-button class="greenBtn">Upload</ion-button>
+                  </div>
+            </ion-col>
+          </ion-row>
+      </section>
+</ion-content>

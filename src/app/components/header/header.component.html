@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons class="headerClass" slot="start">
+        <div [routerLink]="['/']">
+          <ion-img src="assets/image/m-logo.png"></ion-img>
+        </div>
+      </ion-buttons>
+      <div class="outlineDiv">
+        <div class="inlineDiv">
+          <ion-searchbar class="search"></ion-searchbar>
+        </div>
+        <select class="ionDropdown">
+          <option>Video</option>
+          <option>Image</option>
+          <option>Profile</option>
+        </select>
+      </div>
+      <ion-buttons slot="primary" class="login">
+        <div>
+           
+
+          <ion-img  [routerLink]="['/login']"
+            src="assets/image/login.png"
+          ></ion-img>
+        </div>
+      </ion-buttons>
+    </ion-toolbar>
+  
+    <section class="toolbarBg">
+      <ion-grid>
+        <ion-row class="nenuIcon">
+          <ion-col class="ion-text-center">
+            <div>
+               
+              <ion-img  [routerLink]="['/feeds']" routerLinkActive="active" src="assets/image/rss.png"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-img src="assets/image/notification.png"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="dropImg" >        
+              <div (click)="settingDropdown()">
+                    <ion-icon name="arrow-dropdown" slot="end"></ion-icon>
+  
+                    <ion-img src="assets/image/settings.png"></ion-img>
+                </div>
+              <!-- <select>
+                <option><ion-button class="firstOpt"></ion-button></option> 
+                <option (onClick)="changePassword()"><ion-button   >Password</ion-button></option>
+                <option><ion-button  value="ar">Logout</ion-button></option>
+              </select> -->
+              <ion-card class="dropDown" [ngClass]="{dropDownCss: display}">
+               
+                  
+                <ion-list [routerLink]="['/changePassword']"  (click)="hiddenDiv()">
+                  
+                  <ion-item>
+                      <ion-img src="assets/image/key.png" slot="start"></ion-img>
+                      <h6>Change Password</h6></ion-item>
+                </ion-list>
+                <ion-list (click)="hiddenDiv()">
+                    
+                  <ion-item>
+                      <ion-img src="assets/image/logout.png" slot="start"></ion-img>
+                      <h6>Logout</h6></ion-item>
+                </ion-list>
+              </ion-card>
+             
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+             
+              <ion-img  src="assets/image/user.png"  [routerLink]="['/users/profile']" routerLinkActive="active"></ion-img>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </section>
+  </ion-header>

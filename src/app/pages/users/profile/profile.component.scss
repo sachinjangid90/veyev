@@ -1,0 +1,146 @@
+.profile{
+    background-image:url(/assets/image/coffee.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+.editClass {
+    color: #fff;
+    display: flex;
+    background: rgba(0,0,0,0.3);
+    width: 70px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.editClass div {
+    display: flex;
+}
+.editClass ion-icon {
+    font-size: 25px;
+}
+.editClass ion-label {
+    font-size: 14px;
+    margin: 5px 0 0 10px;;
+}
+.detailProfile div ion-img {
+    border: 2px solid #fff;
+    border-radius: 90px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #7890a1;
+    animation:images 4s infinite;
+}
+.list-ios {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0px;
+    margin-bottom: 0px!important;
+}
+@keyframes images{
+    0%{
+        transform: scale(.95);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.95);
+    }
+}
+.detailProfile ion-card {
+    background: rgba(18, 7, 7, .68);
+    padding: 10px 20px;
+    height: 100%;
+    margin:0;
+    color:#fff;
+    overflow: initial;
+}
+.detailProfile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.detailProfile ion-card div ion-img {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 4px 5px;
+    width: 30px;
+    position: absolute;
+    right: 5px;
+    z-index: 999;
+    bottom: 5px;
+}
+.icon-list {
+    width: 57px;
+    position: fixed;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 0;
+    border:1px solid #ccc;
+}
+.icon-list ion-item .item-native {
+    padding:0!important;
+}
+.add-icon ion-icon {
+    font-size: 30px;
+}
+.add-icon ion-badge {
+    border-radius: 30px;
+    background: #ff0000;
+}
+.add-icon {
+    position: fixed;
+    top: 84%;
+    transform: translateY(-84%);
+    right: 10px;
+}
+.hideDiv {
+    display: none;
+}
+.arrows{
+    width: 15px;
+    margin:0 auto;
+    // animation: arrows 5s infinite;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.arrows img{
+    animation: arrows 2s infinite;
+}
+@keyframes arrows{
+    0%{
+        margin-top: 3px;
+    }
+    50%{
+        margin-top: -6px;
+    }
+    100%{
+        margin-top: 3px;
+    }
+}
+// .arrows img {
+//     border: none!important;
+//     box-shadow: none!important;
+//     width: 30px!important;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     margin: 0 auto;
+// }
+@media screen and (max-width:767px){
+    .detailProfile div ion-img {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .detailProfile ion-card P{
+        margin:0;
+    }
+    .detailProfile ion-card h5{
+        margin-top:0;
+    }
+}

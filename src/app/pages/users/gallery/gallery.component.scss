@@ -1,0 +1,76 @@
+// .galleryOuter ion-col {
+//     height: 210px;
+// }
+// .galleryOuter ion-col ion-img {
+//     height: 100%;
+// }
+.borderRight{
+    border-right:1px solid #000;
+}
+.tabs{
+    margin: 20px 0 10px 0;
+    padding: 0;
+}
+.tabs h3{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.fontColorOne{
+    color:#ff0000!important
+}
+.fontColorTwo{
+    color:#000;
+}
+.galleryHeader{
+    display: none;
+}
+// .icon-list {
+//     width: 57px;
+//     position: fixed;
+//     top: 50%;
+//     transform: translatey(-50%);
+//     right: 0;
+//     border:1px solid #ccc;
+// }
+// .icon-list ion-item .item-native {
+//     padding:0!important;
+// }
+// .add-icon ion-icon {
+//     font-size: 30px;
+// }
+// .add-icon ion-badge {
+//     border-radius: 30px;
+//     background: #ff0000;
+// }
+// .add-icon {
+//     position: fixed;
+//     top: 84%;
+//     transform: translateY(-84%);
+//     right: 10px;
+// }
+.timelineImg ion-img {
+    height: 100%;
+}
+.timelineImg {
+    max-width: 80px;
+    position: fixed;
+    bottom: 30px;
+    left: 25px;
+    animation: timelineImg 3s infinite;
+}
+@media screen and (max-width:767px){
+    .galleryHeader{
+        display: block;
+    }
+}
+@media screen and (max-width:575px){
+    // .galleryOuter ion-col {
+    //     height: 150px;
+    // }
+}
+@media screen and (max-width:415px){
+    // .galleryOuter ion-col {
+    //     height: 100px;
+    // }
+}

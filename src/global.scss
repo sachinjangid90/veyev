@@ -1,0 +1,82 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+// .timelineCss {
+//         --width: 700px!important;
+//         // --height: 100%!important;
+// }
+// .galleryCss{
+//         --width: 700px!important;
+//         --height: 100%!important;
+// }
+// .followerCss{
+//         --width: 800px!important;
+//         --height: 100%!important;
+// }
+.recommendCss{
+        --height: 100%!important;
+}
+// .likeCss .modal-wrapper{
+       
+// }
+.commentCss .modal-wrapper {
+        --height: 290px!important;
+}
+.shareCss .modal-wrapper {
+        --height: 300px!important;
+}
+.editProfileCss{
+        --width: 90%!important;
+}
+@media screen and (max-width:767px){
+        .timelineCss {
+                --width: 90%!important;
+                // top:111px;
+                //.modal-wrapper{
+                        // --height: 87%!important;
+                        // position:absolute;
+                        // bottom:0;
+                // }   
+                // ion-backdrop{
+                //         top:100px;
+                // }   
+        }
+        .galleryCss{
+                --width: 100%!important;
+        }
+        .followerCss{
+                --width: 100%!important;
+        }
+        .likeCss .modal-wrapper{
+                --width: 90%!important;
+                --height: 85%!important;
+        }
+        .commentCss .modal-wrapper {
+                --width: 90%!important;
+                --height: 290px!important;
+        }
+        .shareCss .modal-wrapper {
+                --width: 90%!important;
+                --height: 300px!important;
+        }
+        .recommendCss{
+                --width: 90%!important;
+        }
+        .openPopoverCss{
+                --width: 90%!important;
+                --height: 480px!important;
+        }
+        .editProfileCss .modal-wrapper{
+                --width: 90%!important;
+                --height: 365px!important;
+        }
+}

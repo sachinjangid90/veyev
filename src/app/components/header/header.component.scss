@@ -1,0 +1,106 @@
+ion-header{
+    ion-toolbar{
+        padding:2px 0 4px 0!important;
+        .login {
+            border: 1px solid #ff0000;
+            background:#d9544f;
+            height: 42px;
+            margin-right: 5px;
+            div{
+                ion-img{
+                    width: 42px;
+                    padding: 3px 7px 0;
+                }
+            }
+        }
+        .headerClass {
+            width: 38px;
+        }
+    }
+    ion-searchbar{
+        --background:transparent!important;
+            padding: 0!important;
+    }
+    .ionDropdown{
+        border-left: 1px solid #ccc;
+        background: transparent;
+        float: right;
+        border: none;
+        margin-top:11px;
+        &:focus{
+            outline: none!important;
+        }
+    }  
+}
+.nenuIcon ion-col div ion-img {
+    width: 20px;
+    margin:0 auto;
+}
+.firstOpt{
+    display: none;
+}
+.nenuIcon ion-col{
+    padding: 0;
+}
+.toolbarBg{
+    background: #ecefec;
+    padding:10px 0 5px 0;
+}
+.outlineDiv{
+    --padding-start: 0px!important;
+    border: 1px solid #ccc;
+    margin: 0 7px 0 1px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.inlineDiv {
+    width: calc(100% - 70px);
+    float: left;
+}
+.sc-ion-searchbar-ios-h {
+    height: 40px;
+}
+.sc-ion-searchbar-md {
+    padding-right: 0!important;
+}
+.dropImg {
+    width: 45px;
+    margin: 0 auto;
+ //   position: relative;
+}
+.dropImg select{
+    background: transparent;
+    width: 21px;
+    float: right;
+    border: none;
+}
+.dropImg select:focus{
+    outline: none;
+}
+.dropImg ion-img{
+    float: left;
+}
+.dropDown {
+    position: absolute;
+    padding: 2px;
+    z-index: 9;
+    width: 200px;
+    right: 10px;
+    top: 13px;
+}
+.dropDown ion-list{
+      padding:0;
+ }
+ .dropDown ion-list ion-item ion-img{
+    margin-right:5px;
+    width: 15px;
+}
+ .dropDownCss{
+     display: none;
+ }
+.dropDown ion-list h6{
+    margin: 0;
+}
+.active{
+    border-bottom: 2px solid #ff0000;
+}

@@ -1,0 +1,32 @@
+.recommendImg ion-img{
+    width: 100px;
+    margin: 0 auto;
+}
+.textArea{
+    border: 1px solid #ccc;
+    margin-bottom: 7px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.greenBtn ion-button {
+    --background: #5cb85c!important;
+}
+.greenBtn {
+    text-align: center;
+    margin-top: 10px;
+}
+.recommendPara{
+    padding-top: 15px;
+}
+.recommendPara p{
+    margin: 0 0 4px 0;
+}
+.recommendPara p:nth-child(2){
+    color:red;
+}
+@media screen and (max-width:575px){
+    .recommendImg ion-img{
+        width: 100%;
+        margin: 5px auto;
+    }
+}
