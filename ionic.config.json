@@ -1,7 +1,8 @@
 {
   "name": "penpencil-mobile-app-new",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
